@@ -4,6 +4,12 @@
 		<WorkUnit Name="Soundcaster_Hold_2" ID="{9757026B-4454-4475-A0AE-E9479CB01F27}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundcasterSession Name="MarioTest" ID="{96C2C392-53B9-4109-ABB1-CFCE60D5A041}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_SW_Pl_Jump" ID="{2FB6C5EC-30E4-44C8-90D7-FF5F6D7E054D}" WorkUnitID="{6C99D249-6E30-4277-AF87-C05271BE0944}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="ST_MarioDead" ID="{B8856D92-7800-449E-8763-F6D2F43E1D6B}"/>
@@ -12,6 +18,7 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="DB_Switch_One" ID="{66995346-05B9-4944-9F93-7E717E803547}"/>
+						<CurrentSwitchRef Name="Jump_Small" ID="{1A2BE53F-15DE-4EB7-95B1-139F9C45DAAB}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

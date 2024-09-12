@@ -116,8 +116,14 @@
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Jump_Small" ID="{1A2BE53F-15DE-4EB7-95B1-139F9C45DAAB}" WorkUnitID="{2D04D7EF-0525-44BE-97F0-529A56952AEF}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="SwitchGroup_Player_Jump" ID="{E7306B83-9315-49D8-A457-D37E3005E485}" WorkUnitID="{2D04D7EF-0525-44BE-97F0-529A56952AEF}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -175,6 +181,20 @@
 												<ItemRef Name="smb_jump-super" ID="{3DC59DCF-EA98-4345-A90C-D0640267131E}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Jump_Big" ID="{77289112-CC3E-43D3-88A0-0C578A574FFA}"/>
+												<ItemList>
+													<ItemRef Name="smb_jump-super" ID="{3DC59DCF-EA98-4345-A90C-D0640267131E}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Jump_Small" ID="{1A2BE53F-15DE-4EB7-95B1-139F9C45DAAB}"/>
+												<ItemList>
+													<ItemRef Name="smb_jump-small" ID="{2A03295C-0831-48C8-97B5-7975AE4A9597}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
 									</GroupingInfo>
 								</SwitchContainer>
 							</ChildrenList>

@@ -20,7 +20,10 @@
 						<CurrentStateRef Name="ST_MarioLive_03" ID="{95883DBB-D04F-49BD-BA82-1E2C6F353C0A}"/>
 						<CurrentStateRef Name="ST_Level_101" ID="{EA104441-24A9-4C55-9CAE-F0CF6F7E05D5}"/>
 					</CurrentStateList>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="DB_Switch_One" ID="{66995346-05B9-4944-9F93-7E717E803547}"/>
+						<CurrentSwitchRef Name="Jump_Big" ID="{77289112-CC3E-43D3-88A0-0C578A574FFA}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
