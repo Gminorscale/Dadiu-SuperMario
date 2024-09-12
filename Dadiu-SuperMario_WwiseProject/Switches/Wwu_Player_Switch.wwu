@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2D04D7EF-0525-44BE-97F0-529A56952AEF}" SchemaVersion="119">
+	<Switches>
+		<WorkUnit Name="Wwu_Player_Switch" ID="{2D04D7EF-0525-44BE-97F0-529A56952AEF}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="SwitchGroup_Player_Jump" ID="{E7306B83-9315-49D8-A457-D37E3005E485}">
+					<ChildrenList>
+						<Switch Name="Jump_Big" ID="{77289112-CC3E-43D3-88A0-0C578A574FFA}"/>
+						<Switch Name="Jump_Small" ID="{1A2BE53F-15DE-4EB7-95B1-139F9C45DAAB}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

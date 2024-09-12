@@ -16,7 +16,7 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="ST_MarioSmall" ID="{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}"/>
+						<CurrentStateRef Name="ST_MarioDead" ID="{B8856D92-7800-449E-8763-F6D2F43E1D6B}"/>
 						<CurrentStateRef Name="ST_MarioLive_03" ID="{95883DBB-D04F-49BD-BA82-1E2C6F353C0A}"/>
 						<CurrentStateRef Name="ST_Level_101" ID="{EA104441-24A9-4C55-9CAE-F0CF6F7E05D5}"/>
 					</CurrentStateList>

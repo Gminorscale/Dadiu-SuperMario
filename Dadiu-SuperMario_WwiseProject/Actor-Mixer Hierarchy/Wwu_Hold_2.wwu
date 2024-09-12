@@ -67,50 +67,6 @@
 										<ActiveSource Name="smb_fireball" ID="{C6CCEDD9-9C1D-4AB7-8EB8-8E8AC0CC5900}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="smb_jump-small" ID="{2A03295C-0831-48C8-97B5-7975AE4A9597}" ShortID="132054672">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="smb_jump-small" ID="{FB82640D-5E65-4865-A858-0C4F0A4901B7}">
-											<Language>SFX</Language>
-											<AudioFile>smb_jump-small.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="180393736"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="smb_jump-small" ID="{FB82640D-5E65-4865-A858-0C4F0A4901B7}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="smb_jump-super" ID="{3DC59DCF-EA98-4345-A90C-D0640267131E}" ShortID="712785420">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="smb_jump-super" ID="{5EB4D872-8666-4C11-AA9A-4CE2946B45E5}">
-											<Language>SFX</Language>
-											<AudioFile>smb_jump-super.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="590021568"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="smb_jump-super" ID="{5EB4D872-8666-4C11-AA9A-4CE2946B45E5}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="smb_kick" ID="{71AD41C7-9D65-46CF-92A1-D9F460AE54FF}" ShortID="937690440">
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -155,6 +111,72 @@
 										<ActiveSource Name="smb_stomp" ID="{B1D74C3C-49CE-4FD3-8DE8-934389310C19}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<SwitchContainer Name="SW_Pl_Jump" ID="{C606C4E8-8109-4B54-ACB7-3DB0A31E26D2}" ShortID="672733214">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="smb_jump-small" ID="{2A03295C-0831-48C8-97B5-7975AE4A9597}" ShortID="132054672">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="smb_jump-small" ID="{FB82640D-5E65-4865-A858-0C4F0A4901B7}">
+													<Language>SFX</Language>
+													<AudioFile>smb_jump-small.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="180393736"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="smb_jump-small" ID="{FB82640D-5E65-4865-A858-0C4F0A4901B7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="smb_jump-super" ID="{3DC59DCF-EA98-4345-A90C-D0640267131E}" ShortID="712785420">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="smb_jump-super" ID="{5EB4D872-8666-4C11-AA9A-4CE2946B45E5}">
+													<Language>SFX</Language>
+													<AudioFile>smb_jump-super.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="590021568"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="smb_jump-super" ID="{5EB4D872-8666-4C11-AA9A-4CE2946B45E5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="smb_jump-small" ID="{2A03295C-0831-48C8-97B5-7975AE4A9597}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="smb_jump-super" ID="{3DC59DCF-EA98-4345-A90C-D0640267131E}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="EnemySounds" ID="{1695528F-BDEF-4517-9CF8-5DDFF04CC310}" ShortID="1034828593">
