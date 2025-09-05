@@ -16,10 +16,10 @@
 				</Event>
 				<Event Name="Play_Mario_Jump_Air" ID="{D57D062B-A1E5-4174-9B65-CE6090DFC085}">
 					<ChildrenList>
-						<Action Name="" ID="{4946729F-D8CF-4FDA-A7D1-AEDAE50A679F}" ShortID="479244454">
+						<Action Name="" ID="{9D8F22F4-74F5-4BBB-A14A-359329F367DD}" ShortID="997584122">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Mario_Jump_Air" ID="{4897DB64-F53F-4190-8D86-6C6A4B36A167}" WorkUnitID="{AC3C7586-1AFE-45C2-8FBD-71A2B1683C71}"/>
+									<ObjectRef Name="Mario_JumpAir_Sw" ID="{B12AC338-0A31-4639-9714-17B3DE925E3E}" WorkUnitID="{AC3C7586-1AFE-45C2-8FBD-71A2B1683C71}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -53,6 +53,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Mario_Running" ID="{EFF40A94-0427-484E-983B-0DCE4B807185}" WorkUnitID="{AC3C7586-1AFE-45C2-8FBD-71A2B1683C71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Mario_Footsteps" ID="{43194ED2-F0EA-4540-9AFD-22C934669CB1}">
+					<ChildrenList>
+						<Action Name="" ID="{8ECFC1CD-3982-4109-A8E8-8F09BC6360C0}" ShortID="104527892">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mario_Footsteps" ID="{85495927-4D17-4765-8EC8-300583648D45}" WorkUnitID="{AC3C7586-1AFE-45C2-8FBD-71A2B1683C71}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

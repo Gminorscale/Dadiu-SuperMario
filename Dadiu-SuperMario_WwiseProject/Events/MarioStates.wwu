@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C30A02BC-D7B3-4F59-950F-9F64CBBDBF13}" SchemaVersion="123">
 	<Events>
-		<WorkUnit Name="MarioStates" ID="{C30A02BC-D7B3-4F59-950F-9F64CBBDBF13}" PersistMode="Standalone"/>
+		<WorkUnit Name="MarioStates" ID="{C30A02BC-D7B3-4F59-950F-9F64CBBDBF13}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="MarioDead" ID="{58900238-BA41-48FF-890C-3AFFEB727A11}">
+					<ChildrenList>
+						<Action Name="" ID="{1FF2193A-5796-484E-BE47-EFBE31AD02F5}" ShortID="54303416">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mario_Jump_Air_Big" ID="{4897DB64-F53F-4190-8D86-6C6A4B36A167}" WorkUnitID="{AC3C7586-1AFE-45C2-8FBD-71A2B1683C71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4CEAEF56-BD04-45C2-9ED0-7B97F26423AB}" ShortID="406377661">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mario_Landing" ID="{96606A77-D21C-4BEF-B56F-430C41D354CB}" WorkUnitID="{AC3C7586-1AFE-45C2-8FBD-71A2B1683C71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{970C41BD-2479-4ADC-9312-6E59C0BE7CEA}" ShortID="458367757">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Play_FlagPole" ID="{783B7E27-E535-475C-B847-89EDABD94816}" WorkUnitID="{C4DF7127-4263-4525-941C-8C81A7EA1467}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

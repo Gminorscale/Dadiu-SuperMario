@@ -137,7 +137,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Soundbanks
     guid: 2b248c1807126d4da58bf81dd9e1e1e0
     GuidInternal: 
-    m_lastTime: -8584446180217397017
+    m_lastTime: -8584445468220674097
     List:
     - name: BNK_Main
       guid: 770abb4f429b2043bfc9ca6642c05aba
@@ -355,8 +355,123 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 49d2996c306e7742af87c05271be0944
     GuidInternal: 
-    m_lastTime: -8584446282418828465
+    m_lastTime: -8584445446647044731
     List: []
+  - PhysicalPath: Events\MarioMovement.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: MarioMovement
+      ObjectType: 12
+      guid: 70863bb592b7f64397b306198fc027b3
+    ParentPath: Events\MarioMovement
+    guid: 70863bb592b7f64397b306198fc027b3
+    GuidInternal: 
+    m_lastTime: -8584445446647014744
+    List:
+    - name: Play_Mario_Footsteps
+      guid: d24e1943eaf040459afd22c934669cb1
+      id: 3279359330
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: MarioMovement
+        ObjectType: 12
+        guid: 70863bb592b7f64397b306198fc027b3
+      - ElementName: Play_Mario_Footsteps
+        ObjectType: 3
+        guid: d24e1943eaf040459afd22c934669cb1
+      Path: Events\MarioMovement\Play_Mario_Footsteps
+      maxAttenuation: 0
+      maxDuration: 0.5
+      minDuration: 0.5
+    - name: Play_Mario_Jump
+      guid: 30403015cbeb434c95cdf1e779afa0cb
+      id: 2044119629
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: MarioMovement
+        ObjectType: 12
+        guid: 70863bb592b7f64397b306198fc027b3
+      - ElementName: Play_Mario_Jump
+        ObjectType: 3
+        guid: 30403015cbeb434c95cdf1e779afa0cb
+      Path: Events\MarioMovement\Play_Mario_Jump
+      maxAttenuation: 0
+      maxDuration: 1
+      minDuration: 0.5
+    - name: Play_Mario_Jump_Air
+      guid: 2b067dd5e5a174419b65ce6090dfc085
+      id: 264438660
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: MarioMovement
+        ObjectType: 12
+        guid: 70863bb592b7f64397b306198fc027b3
+      - ElementName: Play_Mario_Jump_Air
+        ObjectType: 3
+        guid: 2b067dd5e5a174419b65ce6090dfc085
+      Path: Events\MarioMovement\Play_Mario_Jump_Air
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Mario_Landing
+      guid: 09128d0404ed8f4ea566b1f948891f86
+      id: 2951688446
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: MarioMovement
+        ObjectType: 12
+        guid: 70863bb592b7f64397b306198fc027b3
+      - ElementName: Play_Mario_Landing
+        ObjectType: 3
+        guid: 09128d0404ed8f4ea566b1f948891f86
+      Path: Events\MarioMovement\Play_Mario_Landing
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Mario_Running
+      guid: 2de43deb54214545998821dc83e127e9
+      id: 2903442078
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: MarioMovement
+        ObjectType: 12
+        guid: 70863bb592b7f64397b306198fc027b3
+      - ElementName: Play_Mario_Running
+        ObjectType: 3
+        guid: 2de43deb54214545998821dc83e127e9
+      Path: Events\MarioMovement\Play_Mario_Running
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Mario_Upgrade_Mushroom
+      guid: bb8fdd9fc93ccb4bb52ef358d419391d
+      id: 2083511724
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: MarioMovement
+        ObjectType: 12
+        guid: 70863bb592b7f64397b306198fc027b3
+      - ElementName: Play_Mario_Upgrade_Mushroom
+        ObjectType: 3
+        guid: bb8fdd9fc93ccb4bb52ef358d419391d
+      Path: Events\MarioMovement\Play_Mario_Upgrade_Mushroom
+      maxAttenuation: 0
+      maxDuration: 2
+      minDuration: 2
   - PhysicalPath: Events\MarioStates.wwu
     PathAndIcons:
     - ElementName: Events
@@ -368,8 +483,25 @@ MonoBehaviour:
     ParentPath: Events\MarioStates
     guid: bc020ac3b3d7594f950f9f64cbbdbf13
     GuidInternal: 
-    m_lastTime: -8584446180220167247
-    List: []
+    m_lastTime: -8584445436849396132
+    List:
+    - name: MarioDead
+      guid: 3802905841baff48890c3affeb727a11
+      id: 1648573193
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: MarioStates
+        ObjectType: 12
+        guid: bc020ac3b3d7594f950f9f64cbbdbf13
+      - ElementName: MarioDead
+        ObjectType: 3
+        guid: 3802905841baff48890c3affeb727a11
+      Path: Events\MarioStates\MarioDead
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Music.wwu
     PathAndIcons:
     - ElementName: Events
@@ -594,7 +726,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Mario
     guid: 3ef66c4c05810c47a820ec50e4fe9245
     GuidInternal: 
-    m_lastTime: -8584446180220147217
+    m_lastTime: -8584445448101539483
     List:
     - name: MarioDistanceToFlagPole
       guid: d7fa95f52ec09a449e579bbb525af95c
@@ -652,6 +784,61 @@ MonoBehaviour:
         ObjectType: 13
         guid: c4a16c96e199d147875d46278331cca5
       Path: Game Parameters\Mario\MarioSpeed
+    - name: MarioYAxis
+      guid: b8585e0fd1b84340bceb85d0aa2a5b30
+      id: 3827456195
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Mario
+        ObjectType: 12
+        guid: 3ef66c4c05810c47a820ec50e4fe9245
+      - ElementName: MarioYAxis
+        ObjectType: 13
+        guid: b8585e0fd1b84340bceb85d0aa2a5b30
+      Path: Game Parameters\Mario\MarioYAxis
+  - PhysicalPath: Game Parameters\MarioMovement.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: MarioMovement
+      ObjectType: 12
+      guid: e896455c7440ee4c8b6027c166cb29ee
+    ParentPath: Game Parameters\MarioMovement
+    guid: e896455c7440ee4c8b6027c166cb29ee
+    GuidInternal: 
+    m_lastTime: -8584445475356721841
+    List:
+    - name: Mario_DistanceToBush
+      guid: 6377f08d2fa1a44ab56e30e6e713df9f
+      id: 2077347574
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: MarioMovement
+        ObjectType: 12
+        guid: e896455c7440ee4c8b6027c166cb29ee
+      - ElementName: Mario_DistanceToBush
+        ObjectType: 13
+        guid: 6377f08d2fa1a44ab56e30e6e713df9f
+      Path: Game Parameters\MarioMovement\Mario_DistanceToBush
+    - name: Mario_Jump_Air
+      guid: c28e2bba27b8a343b1eac959c2612152
+      id: 710739923
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: MarioMovement
+        ObjectType: 12
+        guid: e896455c7440ee4c8b6027c166cb29ee
+      - ElementName: Mario_Jump_Air
+        ObjectType: 13
+        guid: c28e2bba27b8a343b1eac959c2612152
+      Path: Game Parameters\MarioMovement\Mario_Jump_Air
   - PhysicalPath: Game Parameters\Sjurdur.wwu
     PathAndIcons:
     - ElementName: Game Parameters
@@ -850,6 +1037,85 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+  - PhysicalPath: States\MarioMovement.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: MarioMovement
+      ObjectType: 12
+      guid: 8170068e06812142879ae011b4232db7
+    ParentPath: States\MarioMovement
+    guid: 8170068e06812142879ae011b4232db7
+    GuidInternal: 
+    m_lastTime: -8584445437253953888
+    List:
+    - name: MarioRunning
+      guid: 212485e73c2896469e25ba8bcd650651
+      id: 3290740104
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: MarioMovement
+        ObjectType: 12
+        guid: 8170068e06812142879ae011b4232db7
+      - ElementName: MarioRunning
+        ObjectType: 9
+        guid: 212485e73c2896469e25ba8bcd650651
+      Path: States\MarioMovement\MarioRunning
+      values:
+      - name: None
+        guid: 078ccef3fd25cd4389b36deb17d72a27
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: MarioMovement
+          ObjectType: 12
+          guid: 8170068e06812142879ae011b4232db7
+        - ElementName: MarioRunning
+          ObjectType: 9
+          guid: 212485e73c2896469e25ba8bcd650651
+        - ElementName: None
+          ObjectType: 8
+          guid: 078ccef3fd25cd4389b36deb17d72a27
+      - name: Running
+        guid: b22c51b237248f4ab2701c402a7e50a2
+        id: 3863236874
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: MarioMovement
+          ObjectType: 12
+          guid: 8170068e06812142879ae011b4232db7
+        - ElementName: MarioRunning
+          ObjectType: 9
+          guid: 212485e73c2896469e25ba8bcd650651
+        - ElementName: Running
+          ObjectType: 8
+          guid: b22c51b237248f4ab2701c402a7e50a2
+      - name: Start
+        guid: 05c7aa84847e594e9d0182cb67915be2
+        id: 1281810935
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: MarioMovement
+          ObjectType: 12
+          guid: 8170068e06812142879ae011b4232db7
+        - ElementName: MarioRunning
+          ObjectType: 9
+          guid: 212485e73c2896469e25ba8bcd650651
+        - ElementName: Start
+          ObjectType: 8
+          guid: 05c7aa84847e594e9d0182cb67915be2
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   - PhysicalPath: States\MarioStates.wwu
     PathAndIcons:
     - ElementName: States
@@ -861,7 +1127,7 @@ MonoBehaviour:
     ParentPath: States\MarioStates
     guid: dd9820ff9e19f4498d4fa281c196dd31
     GuidInternal: 
-    m_lastTime: -8584446180217367049
+    m_lastTime: -8584445478271218088
     List:
     - name: MarioLives
       guid: 643e3a7fd3936645b395b0c49db9ea3d
@@ -878,6 +1144,70 @@ MonoBehaviour:
         guid: 643e3a7fd3936645b395b0c49db9ea3d
       Path: States\MarioStates\MarioLives
       values:
+      - name: MarioLive_00
+        guid: 2561a7fc30265541a2045ab8b3e1178c
+        id: 3637637980
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: MarioStates
+          ObjectType: 12
+          guid: dd9820ff9e19f4498d4fa281c196dd31
+        - ElementName: MarioLives
+          ObjectType: 9
+          guid: 643e3a7fd3936645b395b0c49db9ea3d
+        - ElementName: MarioLive_00
+          ObjectType: 8
+          guid: 2561a7fc30265541a2045ab8b3e1178c
+      - name: MarioLive_01
+        guid: a21815a07c9c6d4b81b1a9dbeeb09c4f
+        id: 3637637981
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: MarioStates
+          ObjectType: 12
+          guid: dd9820ff9e19f4498d4fa281c196dd31
+        - ElementName: MarioLives
+          ObjectType: 9
+          guid: 643e3a7fd3936645b395b0c49db9ea3d
+        - ElementName: MarioLive_01
+          ObjectType: 8
+          guid: a21815a07c9c6d4b81b1a9dbeeb09c4f
+      - name: MarioLive_02
+        guid: 8c9bdb7877d70b4c9989bc130da4966d
+        id: 3637637982
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: MarioStates
+          ObjectType: 12
+          guid: dd9820ff9e19f4498d4fa281c196dd31
+        - ElementName: MarioLives
+          ObjectType: 9
+          guid: 643e3a7fd3936645b395b0c49db9ea3d
+        - ElementName: MarioLive_02
+          ObjectType: 8
+          guid: 8c9bdb7877d70b4c9989bc130da4966d
+      - name: MarioLive_03
+        guid: bb3d88954fd0bd49ba821e2c6f353c0a
+        id: 3637637983
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: MarioStates
+          ObjectType: 12
+          guid: dd9820ff9e19f4498d4fa281c196dd31
+        - ElementName: MarioLives
+          ObjectType: 9
+          guid: 643e3a7fd3936645b395b0c49db9ea3d
+        - ElementName: MarioLive_03
+          ObjectType: 8
+          guid: bb3d88954fd0bd49ba821e2c6f353c0a
       - name: None
         guid: 00dcb037b7190a47b20f561ddc4372c5
         id: 748895195
@@ -894,70 +1224,6 @@ MonoBehaviour:
         - ElementName: None
           ObjectType: 8
           guid: 00dcb037b7190a47b20f561ddc4372c5
-      - name: ST_MarioLive_00
-        guid: 2561a7fc30265541a2045ab8b3e1178c
-        id: 826997358
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: MarioStates
-          ObjectType: 12
-          guid: dd9820ff9e19f4498d4fa281c196dd31
-        - ElementName: MarioLives
-          ObjectType: 9
-          guid: 643e3a7fd3936645b395b0c49db9ea3d
-        - ElementName: ST_MarioLive_00
-          ObjectType: 8
-          guid: 2561a7fc30265541a2045ab8b3e1178c
-      - name: ST_MarioLive_01
-        guid: a21815a07c9c6d4b81b1a9dbeeb09c4f
-        id: 826997359
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: MarioStates
-          ObjectType: 12
-          guid: dd9820ff9e19f4498d4fa281c196dd31
-        - ElementName: MarioLives
-          ObjectType: 9
-          guid: 643e3a7fd3936645b395b0c49db9ea3d
-        - ElementName: ST_MarioLive_01
-          ObjectType: 8
-          guid: a21815a07c9c6d4b81b1a9dbeeb09c4f
-      - name: ST_MarioLive_02
-        guid: 8c9bdb7877d70b4c9989bc130da4966d
-        id: 826997356
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: MarioStates
-          ObjectType: 12
-          guid: dd9820ff9e19f4498d4fa281c196dd31
-        - ElementName: MarioLives
-          ObjectType: 9
-          guid: 643e3a7fd3936645b395b0c49db9ea3d
-        - ElementName: ST_MarioLive_02
-          ObjectType: 8
-          guid: 8c9bdb7877d70b4c9989bc130da4966d
-      - name: ST_MarioLive_03
-        guid: bb3d88954fd0bd49ba821e2c6f353c0a
-        id: 826997357
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: MarioStates
-          ObjectType: 12
-          guid: dd9820ff9e19f4498d4fa281c196dd31
-        - ElementName: MarioLives
-          ObjectType: 9
-          guid: 643e3a7fd3936645b395b0c49db9ea3d
-        - ElementName: ST_MarioLive_03
-          ObjectType: 8
-          guid: bb3d88954fd0bd49ba821e2c6f353c0a
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -1039,8 +1305,58 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 7094c8337df30a46a03432e80f44db67
     GuidInternal: 
-    m_lastTime: -8584445481307146176
+    m_lastTime: -8584445446957199251
     List:
+    - name: Elevation
+      guid: 5769af89ce69ba46ac976ece018fff40
+      id: 2141048674
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7094c8337df30a46a03432e80f44db67
+      - ElementName: Elevation
+        ObjectType: 11
+        guid: 5769af89ce69ba46ac976ece018fff40
+      Path: Switches\Default Work Unit\Elevation
+      values:
+      - name: HighUpInAir
+        guid: e92754fd1a8506449d5e4254b4e1017a
+        id: 3301294737
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7094c8337df30a46a03432e80f44db67
+        - ElementName: Elevation
+          ObjectType: 11
+          guid: 5769af89ce69ba46ac976ece018fff40
+        - ElementName: HighUpInAir
+          ObjectType: 10
+          guid: e92754fd1a8506449d5e4254b4e1017a
+      - name: NotHighUp
+        guid: 443e993610b10049ab78529ad88e0840
+        id: 3210465691
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7094c8337df30a46a03432e80f44db67
+        - ElementName: Elevation
+          ObjectType: 11
+          guid: 5769af89ce69ba46ac976ece018fff40
+        - ElementName: NotHighUp
+          ObjectType: 10
+          guid: 443e993610b10049ab78529ad88e0840
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: MarioClosenessToPipe
       guid: 1abf2b55e4a8d44ca6cf371f3ef8b956
       id: 2245053687
@@ -1156,7 +1472,7 @@ MonoBehaviour:
     m_lastTime: -8584446295408005376
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 080000001400000016000000
+  ExpandedWaapiItemIds: 0100000008000000090000000a0000000b0000000c0000000d0000001400000016000000180000001b0000003500000040000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

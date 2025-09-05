@@ -11,6 +11,13 @@
     "StaticLib": "AkSilenceSource"
    },
    {
+    "LibName": "Wwise Compressor",
+    "LibId": "7077891",
+    "Type": "Effect",
+    "DLL": "AkCompressor",
+    "StaticLib": "AkCompressorFX"
+   },
+   {
     "LibName": "Wwise Tremolo",
     "LibId": "8585219",
     "Type": "Effect",
@@ -42,6 +49,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{A8BBB4A6-5DF5-D2C3-6654-A25242D7FD21}"
+  "FileHash": "{5D34D71D-3B6B-9EE4-01D6-F4154DF2C8A6}"
  }
 }

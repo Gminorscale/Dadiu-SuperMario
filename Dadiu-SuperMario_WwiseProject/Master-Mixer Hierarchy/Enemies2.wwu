@@ -6,7 +6,7 @@
 				<Bus Name="Koopa" ID="{7DC0711F-BF09-41EB-B2A0-859030A60447}">
 					<ReferenceList>
 						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
-							<ObjectRef Name="System" ID="{95FB93F8-DAD2-4164-942F-374FC52A5AA7}" WorkUnitID="{4E60F0A0-9E50-49A0-91AB-9C2C91ED12AB}"/>
+							<ObjectRef Name="System" ID="{F77DA818-6A36-4B48-A11A-14F296CB8473}" WorkUnitID="{C221F246-E730-474A-971D-0617AE9119FE}"/>
 						</Reference>
 					</ReferenceList>
 					<ObjectLists>
@@ -43,14 +43,14 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
-							<ObjectRef Name="System" ID="{95FB93F8-DAD2-4164-942F-374FC52A5AA7}" WorkUnitID="{4E60F0A0-9E50-49A0-91AB-9C2C91ED12AB}"/>
+							<ObjectRef Name="System" ID="{F77DA818-6A36-4B48-A11A-14F296CB8473}" WorkUnitID="{C221F246-E730-474A-971D-0617AE9119FE}"/>
 						</Reference>
 					</ReferenceList>
 				</Bus>
-				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+				<Bus Name="Master Audio Bus_01" ID="{8E3B9FF3-2E7C-49BA-95FE-8FCA74558747}">
 					<ReferenceList>
 						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
-							<ObjectRef Name="System" ID="{95FB93F8-DAD2-4164-942F-374FC52A5AA7}" WorkUnitID="{4E60F0A0-9E50-49A0-91AB-9C2C91ED12AB}"/>
+							<ObjectRef Name="System" ID="{F77DA818-6A36-4B48-A11A-14F296CB8473}" WorkUnitID="{C221F246-E730-474A-971D-0617AE9119FE}"/>
 						</Reference>
 					</ReferenceList>
 				</Bus>

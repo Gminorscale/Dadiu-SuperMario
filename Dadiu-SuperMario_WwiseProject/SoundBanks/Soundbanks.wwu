@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="BNK_Main" ID="{4FBB0A77-9B42-4320-BFC9-CA6642C05ABA}">
 					<ObjectInclusionList>
+						<ObjectRef Name="MarioMovement" ID="{B53B8670-B792-43F6-97B3-06198FC027B3}" WorkUnitID="{B53B8670-B792-43F6-97B3-06198FC027B3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Objects" ID="{C4DF7127-4263-4525-941C-8C81A7EA1467}" WorkUnitID="{C4DF7127-4263-4525-941C-8C81A7EA1467}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Sjúrður" ID="{699CB3A2-2654-4A90-88B3-5D4B22CD13DC}" WorkUnitID="{699CB3A2-2654-4A90-88B3-5D4B22CD13DC}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music" ID="{5BFE89BA-852C-4B44-8206-423618247DE9}" WorkUnitID="{5BFE89BA-852C-4B44-8206-423618247DE9}" Origin="Manual" Filter="7"/>

@@ -18,7 +18,7 @@
     "Type": "User",
     "GUID": "{4FBB0A77-9B42-4320-BFC9-CA6642C05ABA}",
     "Language": "SFX",
-    "Hash": "{AD41D30D-3A79-59DF-CFA6-057DD14EEE1E}",
+    "Hash": "{62E83965-B5FD-2182-BE36-49613174E708}",
     "ObjectPath": "\\SoundBanks\\Soundbanks\\BNK_Main",
     "ShortName": "BNK_Main",
     "Path": "BNK_Main.bnk",
@@ -40,12 +40,44 @@
       "CachePath": "C5/{C53C4F21-6660-88E4-369E-A9CF1ACD8A78}.wem"
      },
      {
+      "Id": "117560621",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Mario_Jump_002.wav",
+      "CachePath": "F2/{F202096F-F3E0-41E7-D5AA-8564954D3620}.wem"
+     },
+     {
+      "Id": "146845531",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Mario_Powerup_Mushroom_001.wav",
+      "CachePath": "B8/{B8D1C79B-DE86-947E-6AFF-6F81EB72AB7A}.wem"
+     },
+     {
       "Id": "149108280",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "(01-41) Super Mario Bros. 1,2,VS.wav",
       "CachePath": "B6/{B688A1F1-6DDC-B07D-699C-C183C5607A37}.wem"
+     },
+     {
+      "Id": "326319013",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Mario_Footsteps_Big_001.wav",
+      "CachePath": "CA/{CA889309-9A13-B865-807A-9C5821D0F679}.wem"
+     },
+     {
+      "Id": "345548771",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Mario_Footsteps_004.wav",
+      "CachePath": "34/{340CC529-D836-ED33-31F2-C8685C9C2A38}.wem"
      },
      {
       "Id": "370438222",
@@ -56,12 +88,108 @@
       "CachePath": "19/{19F6A1B0-1E7F-041A-C1A5-55B345878C99}.wem"
      },
      {
+      "Id": "416383437",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Mario_Jump_Big_004.wav",
+      "CachePath": "65/{651C8A23-5606-61F2-A0AC-B107CE5747E3}.wem"
+     },
+     {
+      "Id": "419550585",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Mario_Footsteps_002.wav",
+      "CachePath": "06/{06A0F72F-F199-4432-EF14-B7D501F860C7}.wem"
+     },
+     {
+      "Id": "488960707",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Mario_Footsteps_003.wav",
+      "CachePath": "63/{6353A462-6F43-C3D1-CFB9-8A0818D2101B}.wem"
+     },
+     {
+      "Id": "509248287",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Mario_Jump_Big_002.wav",
+      "CachePath": "B0/{B0C314E5-DCF4-43A3-604F-7823909EC495}.wem"
+     },
+     {
+      "Id": "614005515",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Mario_Jump_Big_001.wav",
+      "CachePath": "C5/{C50A0B98-71E0-44CA-5A35-CE31B87333F5}.wem"
+     },
+     {
+      "Id": "691261365",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Mario_Jump_Big_003.wav",
+      "CachePath": "0A/{0A72F445-A6B5-3D47-BB30-F1BB2B384450}.wem"
+     },
+     {
+      "Id": "691798780",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Mario_Powerup_Mushroom_002.wav",
+      "CachePath": "61/{611E86CC-2620-E093-DFE9-B87E30889CAF}.wem"
+     },
+     {
+      "Id": "715130117",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Mario_Jump_004.wav",
+      "CachePath": "F2/{F2291A1E-3774-EBA0-972B-A7EE0A3D6C66}.wem"
+     },
+     {
+      "Id": "723967829",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Mario_Footsteps_Big_003.wav",
+      "CachePath": "DE/{DE9CBFAF-031C-7180-D795-2D9CCA9E0682}.wem"
+     },
+     {
+      "Id": "736456924",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Mario_Powerup_Mushroom_003.wav",
+      "CachePath": "B2/{B20198DE-4D67-0A3A-9693-62998BCDA788}.wem"
+     },
+     {
       "Id": "746759707",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ENV\\env_brick_break_05.wav",
       "CachePath": "7F/{7FE499B2-ED34-6D34-332B-BA3252A1A221}.wem"
+     },
+     {
+      "Id": "764123817",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Mario_Jump_001.wav",
+      "CachePath": "29/{29B8D515-CB31-09D7-9E56-915A641DE341}.wem"
+     },
+     {
+      "Id": "801013165",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Mario_Footsteps_001.wav",
+      "CachePath": "92/{92B2F210-0CE4-6E54-80FA-0434E42D8B0E}.wem"
      },
      {
       "Id": "892213981",
@@ -80,6 +208,30 @@
       "CachePath": "AF/{AFD48077-F490-D296-5740-B9E9DB51D883}.wem"
      },
      {
+      "Id": "924976288",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Mario_Jump_003.wav",
+      "CachePath": "DB/{DBD4FD82-DFBB-AD47-0F16-919DB36E2B92}.wem"
+     },
+     {
+      "Id": "967837257",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Mario_Footsteps_Big_004.wav",
+      "CachePath": "6F/{6FAA645F-8F57-FCE0-B779-37C9C2C79731}.wem"
+     },
+     {
+      "Id": "1018892816",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Mario_Footsteps_Big_002.wav",
+      "CachePath": "D7/{D76043CB-A8CB-8519-0AD7-0BB96AB5A1F0}.wem"
+     },
+     {
       "Id": "1048884391",
       "Language": "SFX",
       "Streaming": "false",
@@ -90,6 +242,14 @@
     ],
     "Plugins": {
      "Custom": [
+      {
+       "Id": "109586148",
+       "Name": "Synth One",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\MarioMovement\\Mario_JumpAir_Sw\\Mario_Jump_Air_Small\\Synth One",
+       "GUID": "{D96FB2BD-05D8-4107-B6B0-1DA92A03EF8B}",
+       "LibName": "Wwise Synth One",
+       "LibId": "9699330"
+      },
       {
        "Id": "337734695",
        "Name": "Synth One",
@@ -119,6 +279,14 @@
        "Name": "Synth One",
        "ObjectPath": "\\Actor-Mixer Hierarchy\\Debug\\MX_Debug\\DB_Synth_200Hz_2D_Lp\\Synth One",
        "GUID": "{298AB6AD-3F61-4192-89CA-685217C29B9D}",
+       "LibName": "Wwise Synth One",
+       "LibId": "9699330"
+      },
+      {
+       "Id": "958582912",
+       "Name": "Synth One",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\MarioMovement\\Mario_JumpAir_Sw\\Mario_Jump_Air_Big\\Synth One",
+       "GUID": "{7CE25225-D05B-404D-A946-B3452022B0F6}",
        "LibName": "Wwise Synth One",
        "LibId": "9699330"
       },
@@ -192,6 +360,28 @@
       ]
      },
      {
+      "Id": "1648573193",
+      "Name": "MarioDead",
+      "ObjectPath": "\\Events\\MarioStates\\MarioDead",
+      "GUID": "{58900238-BA41-48FF-890C-3AFFEB727A11}",
+      "DurationType": "Unknown",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "958582912"
+        }
+       ]
+      },
+      "ActionPostEvent": [
+       {
+        "Id": "3011457342",
+        "Name": "Play_FlagPole",
+        "ObjectPath": "\\Events\\Objects\\Play_FlagPole",
+        "GUID": "{783B7E27-E535-475C-B847-89EDABD94816}"
+       }
+      ]
+     },
+     {
       "Id": "2723243971",
       "Name": "MUS_Level101",
       "ObjectPath": "\\Events\\Music\\MUS_Level101",
@@ -203,9 +393,9 @@
       "ActionSetState": [
        {
         "GroupId": "2678230316",
-        "Id": "2673545494",
-        "Name": "ST_Level_101",
-        "ObjectPath": "\\States\\GameStates\\Levels\\ST_Level_101",
+        "Id": "1370465240",
+        "Name": "Level_101",
+        "ObjectPath": "\\States\\GameStates\\Levels\\Level_101",
         "GUID": "{EA104441-24A9-4C55-9CAE-F0CF6F7E05D5}"
        }
       ]
@@ -222,9 +412,9 @@
       "ActionSetState": [
        {
         "GroupId": "2678230316",
-        "Id": "2673545493",
-        "Name": "ST_Level_102",
-        "ObjectPath": "\\States\\GameStates\\Levels\\ST_Level_102",
+        "Id": "1370465243",
+        "Name": "Level_102",
+        "ObjectPath": "\\States\\GameStates\\Levels\\Level_102",
         "GUID": "{AB2309A4-FEA6-4A3A-A499-BC87BC9EFF20}"
        }
       ]
@@ -248,7 +438,7 @@
           "SwitchValue": {
            "GroupType": "State",
            "GroupId": "2678230316",
-           "Id": "2673545493",
+           "Id": "1370465243",
            "GUID": "{AB2309A4-FEA6-4A3A-A499-BC87BC9EFF20}"
           },
           "Children": [
@@ -284,7 +474,7 @@
           "SwitchValue": {
            "GroupType": "State",
            "GroupId": "2678230316",
-           "Id": "2673545494",
+           "Id": "1370465240",
            "GUID": "{EA104441-24A9-4C55-9CAE-F0CF6F7E05D5}"
           },
           "Children": [
@@ -350,7 +540,7 @@
           "SwitchValue": {
            "GroupType": "State",
            "GroupId": "2678230316",
-           "Id": "2673545493",
+           "Id": "1370465243",
            "GUID": "{AB2309A4-FEA6-4A3A-A499-BC87BC9EFF20}"
           },
           "Children": [
@@ -386,7 +576,7 @@
           "SwitchValue": {
            "GroupType": "State",
            "GroupId": "2678230316",
-           "Id": "2673545494",
+           "Id": "1370465240",
            "GUID": "{EA104441-24A9-4C55-9CAE-F0CF6F7E05D5}"
           },
           "Children": [
@@ -570,6 +760,196 @@
       }
      },
      {
+      "Id": "3279359330",
+      "Name": "Play_Mario_Footsteps",
+      "ObjectPath": "\\Events\\MarioMovement\\Play_Mario_Footsteps",
+      "GUID": "{43194ED2-F0EA-4540-9AFD-22C934669CB1}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5",
+      "DurationMax": "0.5",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "866639936",
+         "Id": "2458678061",
+         "GUID": "{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "345548771"
+         },
+         {
+          "Id": "419550585"
+         },
+         {
+          "Id": "488960707"
+         },
+         {
+          "Id": "801013165"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "866639936",
+         "Id": "1915863002",
+         "GUID": "{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "326319013"
+         },
+         {
+          "Id": "723967829"
+         },
+         {
+          "Id": "967837257"
+         },
+         {
+          "Id": "1018892816"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "2044119629",
+      "Name": "Play_Mario_Jump",
+      "ObjectPath": "\\Events\\MarioMovement\\Play_Mario_Jump",
+      "GUID": "{15304030-EBCB-4C43-95CD-F1E779AFA0CB}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5",
+      "DurationMax": "1",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "866639936",
+         "Id": "2458678061",
+         "GUID": "{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "117560621"
+         },
+         {
+          "Id": "715130117"
+         },
+         {
+          "Id": "764123817"
+         },
+         {
+          "Id": "924976288"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "866639936",
+         "Id": "1915863002",
+         "GUID": "{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "416383437"
+         },
+         {
+          "Id": "509248287"
+         },
+         {
+          "Id": "614005515"
+         },
+         {
+          "Id": "691261365"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "264438660",
+      "Name": "Play_Mario_Jump_Air",
+      "ObjectPath": "\\Events\\MarioMovement\\Play_Mario_Jump_Air",
+      "GUID": "{D57D062B-A1E5-4174-9B65-CE6090DFC085}",
+      "DurationType": "Unknown",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "866639936",
+         "Id": "2458678061",
+         "GUID": "{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}",
+         "Default": "true"
+        },
+        "PluginRefs": {
+         "Custom": [
+          {
+           "Id": "109586148"
+          }
+         ]
+        }
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "866639936",
+         "Id": "1915863002",
+         "GUID": "{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}"
+        },
+        "PluginRefs": {
+         "Custom": [
+          {
+           "Id": "958582912"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "Id": "2951688446",
+      "Name": "Play_Mario_Landing",
+      "ObjectPath": "\\Events\\MarioMovement\\Play_Mario_Landing",
+      "GUID": "{048D1209-ED04-4E8F-A566-B1F948891F86}",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2903442078",
+      "Name": "Play_Mario_Running",
+      "ObjectPath": "\\Events\\MarioMovement\\Play_Mario_Running",
+      "GUID": "{EB3DE42D-2154-4545-9988-21DC83E127E9}",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2083511724",
+      "Name": "Play_Mario_Upgrade_Mushroom",
+      "ObjectPath": "\\Events\\MarioMovement\\Play_Mario_Upgrade_Mushroom",
+      "GUID": "{9FDD8FBB-3CC9-4BCB-B52E-F358D419391D}",
+      "DurationType": "OneShot",
+      "DurationMin": "2",
+      "DurationMax": "2",
+      "MediaRefs": [
+       {
+        "Id": "146845531"
+       },
+       {
+        "Id": "691798780"
+       },
+       {
+        "Id": "736456924"
+       }
+      ]
+     },
+     {
       "Id": "653287783",
       "Name": "Play_Pipe_Idle",
       "ObjectPath": "\\Events\\Objects\\Play_Pipe_Idle",
@@ -586,6 +966,12 @@
     ],
     "GameParameters": [
      {
+      "Id": "710739923",
+      "Name": "Mario_Jump_Air",
+      "ObjectPath": "\\Game Parameters\\MarioMovement\\Mario_Jump_Air",
+      "GUID": "{BA2B8EC2-B827-43A3-B1EA-C959C2612152}"
+     },
+     {
       "Id": "2335757700",
       "Name": "MarioSpeed",
       "ObjectPath": "\\Game Parameters\\Mario\\MarioSpeed",
@@ -596,6 +982,12 @@
       "Name": "MarioDistanceToFlagPole",
       "ObjectPath": "\\Game Parameters\\Mario\\MarioDistanceToFlagPole",
       "GUID": "{F595FAD7-C02E-449A-9E57-9BBB525AF95C}"
+     },
+     {
+      "Id": "3827456195",
+      "Name": "MarioYAxis",
+      "ObjectPath": "\\Game Parameters\\Mario\\MarioYAxis",
+      "GUID": "{0F5E58B8-B8D1-4043-BCEB-85D0AA2A5B30}"
      }
     ],
     "StateGroups": [
@@ -638,28 +1030,65 @@
         "GUID": "{C2BE68D2-7F86-4076-866C-749FF4F7E84E}"
        },
        {
-        "Id": "2673545491",
-        "Name": "ST_Level_104",
-        "ObjectPath": "\\States\\GameStates\\Levels\\ST_Level_104",
-        "GUID": "{D0413FAB-5E97-43C5-B3C8-8DD2A16A9CC7}"
+        "Id": "1370465240",
+        "Name": "Level_101",
+        "ObjectPath": "\\States\\GameStates\\Levels\\Level_101",
+        "GUID": "{EA104441-24A9-4C55-9CAE-F0CF6F7E05D5}"
        },
        {
-        "Id": "2673545492",
-        "Name": "ST_Level_103",
-        "ObjectPath": "\\States\\GameStates\\Levels\\ST_Level_103",
+        "Id": "1370465242",
+        "Name": "Level_103",
+        "ObjectPath": "\\States\\GameStates\\Levels\\Level_103",
         "GUID": "{1FE3077F-3DC1-4865-B4FB-963A98757294}"
        },
        {
-        "Id": "2673545493",
-        "Name": "ST_Level_102",
-        "ObjectPath": "\\States\\GameStates\\Levels\\ST_Level_102",
+        "Id": "1370465243",
+        "Name": "Level_102",
+        "ObjectPath": "\\States\\GameStates\\Levels\\Level_102",
         "GUID": "{AB2309A4-FEA6-4A3A-A499-BC87BC9EFF20}"
        },
        {
-        "Id": "2673545494",
-        "Name": "ST_Level_101",
-        "ObjectPath": "\\States\\GameStates\\Levels\\ST_Level_101",
-        "GUID": "{EA104441-24A9-4C55-9CAE-F0CF6F7E05D5}"
+        "Id": "1370465245",
+        "Name": "Level_104",
+        "ObjectPath": "\\States\\GameStates\\Levels\\Level_104",
+        "GUID": "{D0413FAB-5E97-43C5-B3C8-8DD2A16A9CC7}"
+       },
+       {
+        "Id": "3281625917",
+        "Name": "Level_Menu",
+        "ObjectPath": "\\States\\GameStates\\Levels\\Level_Menu",
+        "GUID": "{86711869-FF67-4EEA-B753-D388DB62B931}"
+       },
+       {
+        "Id": "3444166614",
+        "Name": "Level_Death",
+        "ObjectPath": "\\States\\GameStates\\Levels\\Level_Death",
+        "GUID": "{4EE81454-0580-4C40-BCAF-80F095171312}"
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "2141048674",
+      "Name": "Elevation",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Elevation",
+      "GUID": "{89AF6957-69CE-46BA-AC97-6ECE018FFF40}",
+      "GameParameterRef": {
+       "Id": "3827456195"
+      },
+      "Switches": [
+       {
+        "Id": "3210465691",
+        "Name": "NotHighUp",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Elevation\\NotHighUp",
+        "GUID": "{36993E44-B110-4900-AB78-529AD88E0840}"
+       },
+       {
+        "Id": "3301294737",
+        "Name": "HighUpInAir",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Elevation\\HighUpInAir",
+        "GUID": "{FD5427E9-851A-4406-9D5E-4254B4E1017A}"
        }
       ]
      }
@@ -670,11 +1099,21 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{56FA2520-8809-B38C-09BD-1C01856AE7E0}",
+    "Hash": "{67C0F2C7-A45E-1B9B-7A84-675EF00DC8A6}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "Custom": [
+      {
+       "Id": "184307187",
+       "Name": "Compressor (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Enemies2\\Koopa\\[Effect Slot [0]: (Compressor)]\\Compressor (Custom)",
+       "GUID": "{5DE483B7-E88A-4DFD-A8F3-79D63473FDEC}",
+       "LibName": "Wwise Compressor",
+       "LibId": "7077891"
+      }
+     ],
      "AudioDevices": [
       {
        "Id": "2317455096",
@@ -695,6 +1134,19 @@
      ]
     },
     "Busses": [
+     {
+      "Id": "806331687",
+      "Name": "Koopa",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Enemies2\\Koopa",
+      "GUID": "{7DC0711F-BF09-41EB-B2A0-859030A60447}",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "184307187"
+        }
+       ]
+      }
+     },
      {
       "Id": "2680856269",
       "Name": "Music_Bus",
@@ -718,14 +1170,38 @@
       "Name": "Music",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music",
       "GUID": "{51E79F4D-0B85-45A7-A545-0E2DCDC11C32}"
+     },
+     {
+      "Id": "4267419003",
+      "Name": "Master Audio Bus_01",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Enemies2\\Master Audio Bus_01",
+      "GUID": "{8E3B9FF3-2E7C-49BA-95FE-8FCA74558747}"
+     },
+     {
+      "Id": "4285895376",
+      "Name": "Goomba",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Enemies2\\Goomba",
+      "GUID": "{0CDF66CA-006A-4513-9526-A198882FDD18}"
      }
     ],
     "GameParameters": [
+     {
+      "Id": "710739923",
+      "Name": "Mario_Jump_Air",
+      "ObjectPath": "\\Game Parameters\\MarioMovement\\Mario_Jump_Air",
+      "GUID": "{BA2B8EC2-B827-43A3-B1EA-C959C2612152}"
+     },
      {
       "Id": "855296609",
       "Name": "Wind_Intensity",
       "ObjectPath": "\\Game Parameters\\Sjurdur\\Wind_Intensity",
       "GUID": "{CC40CEFB-10AF-4158-8F5D-166BD1C4213E}"
+     },
+     {
+      "Id": "2077347574",
+      "Name": "Mario_DistanceToBush",
+      "ObjectPath": "\\Game Parameters\\MarioMovement\\Mario_DistanceToBush",
+      "GUID": "{8DF07763-A12F-4AA4-B56E-30E6E713DF9F}"
      },
      {
       "Id": "2252070993",
@@ -758,10 +1234,28 @@
       "GUID": "{005B8D1B-DDC4-4C6F-90D5-A5B991CF0E48}"
      },
      {
+      "Id": "3318567297",
+      "Name": "Distance_Koopa",
+      "ObjectPath": "\\Game Parameters\\Mario Enemies2\\Koopa2\\Distance_Koopa",
+      "GUID": "{B84B3AED-FCF1-4059-B5EE-C7AFBD551420}"
+     },
+     {
       "Id": "3729505769",
       "Name": "TimeOfDay",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\TimeOfDay",
       "GUID": "{07D42004-A84A-4F78-A8AD-8A572424B611}"
+     },
+     {
+      "Id": "3827456195",
+      "Name": "MarioYAxis",
+      "ObjectPath": "\\Game Parameters\\Mario\\MarioYAxis",
+      "GUID": "{0F5E58B8-B8D1-4043-BCEB-85D0AA2A5B30}"
+     },
+     {
+      "Id": "4216763010",
+      "Name": "Distance_Goomba",
+      "ObjectPath": "\\Game Parameters\\Mario Enemies2\\Goomba2\\Distance_Goomba",
+      "GUID": "{09F8EB86-1127-49BC-93D9-AD1332AFC6A4}"
      },
      {
       "Id": "4279643429",
@@ -810,28 +1304,28 @@
         "GUID": "{37B0DC00-19B7-470A-B20F-561DDC4372C5}"
        },
        {
-        "Id": "826997356",
-        "Name": "ST_MarioLive_02",
-        "ObjectPath": "\\States\\MarioStates\\MarioLives\\ST_MarioLive_02",
-        "GUID": "{78DB9B8C-D777-4C0B-9989-BC130DA4966D}"
-       },
-       {
-        "Id": "826997357",
-        "Name": "ST_MarioLive_03",
-        "ObjectPath": "\\States\\MarioStates\\MarioLives\\ST_MarioLive_03",
-        "GUID": "{95883DBB-D04F-49BD-BA82-1E2C6F353C0A}"
-       },
-       {
-        "Id": "826997358",
-        "Name": "ST_MarioLive_00",
-        "ObjectPath": "\\States\\MarioStates\\MarioLives\\ST_MarioLive_00",
+        "Id": "3637637980",
+        "Name": "MarioLive_00",
+        "ObjectPath": "\\States\\MarioStates\\MarioLives\\MarioLive_00",
         "GUID": "{FCA76125-2630-4155-A204-5AB8B3E1178C}"
        },
        {
-        "Id": "826997359",
-        "Name": "ST_MarioLive_01",
-        "ObjectPath": "\\States\\MarioStates\\MarioLives\\ST_MarioLive_01",
+        "Id": "3637637981",
+        "Name": "MarioLive_01",
+        "ObjectPath": "\\States\\MarioStates\\MarioLives\\MarioLive_01",
         "GUID": "{A01518A2-9C7C-4B6D-81B1-A9DBEEB09C4F}"
+       },
+       {
+        "Id": "3637637982",
+        "Name": "MarioLive_02",
+        "ObjectPath": "\\States\\MarioStates\\MarioLives\\MarioLive_02",
+        "GUID": "{78DB9B8C-D777-4C0B-9989-BC130DA4966D}"
+       },
+       {
+        "Id": "3637637983",
+        "Name": "MarioLive_03",
+        "ObjectPath": "\\States\\MarioStates\\MarioLives\\MarioLive_03",
+        "GUID": "{95883DBB-D04F-49BD-BA82-1E2C6F353C0A}"
        }
       ]
      },
@@ -848,28 +1342,66 @@
         "GUID": "{C2BE68D2-7F86-4076-866C-749FF4F7E84E}"
        },
        {
-        "Id": "2673545491",
-        "Name": "ST_Level_104",
-        "ObjectPath": "\\States\\GameStates\\Levels\\ST_Level_104",
-        "GUID": "{D0413FAB-5E97-43C5-B3C8-8DD2A16A9CC7}"
+        "Id": "1370465240",
+        "Name": "Level_101",
+        "ObjectPath": "\\States\\GameStates\\Levels\\Level_101",
+        "GUID": "{EA104441-24A9-4C55-9CAE-F0CF6F7E05D5}"
        },
        {
-        "Id": "2673545492",
-        "Name": "ST_Level_103",
-        "ObjectPath": "\\States\\GameStates\\Levels\\ST_Level_103",
+        "Id": "1370465242",
+        "Name": "Level_103",
+        "ObjectPath": "\\States\\GameStates\\Levels\\Level_103",
         "GUID": "{1FE3077F-3DC1-4865-B4FB-963A98757294}"
        },
        {
-        "Id": "2673545493",
-        "Name": "ST_Level_102",
-        "ObjectPath": "\\States\\GameStates\\Levels\\ST_Level_102",
+        "Id": "1370465243",
+        "Name": "Level_102",
+        "ObjectPath": "\\States\\GameStates\\Levels\\Level_102",
         "GUID": "{AB2309A4-FEA6-4A3A-A499-BC87BC9EFF20}"
        },
        {
-        "Id": "2673545494",
-        "Name": "ST_Level_101",
-        "ObjectPath": "\\States\\GameStates\\Levels\\ST_Level_101",
-        "GUID": "{EA104441-24A9-4C55-9CAE-F0CF6F7E05D5}"
+        "Id": "1370465245",
+        "Name": "Level_104",
+        "ObjectPath": "\\States\\GameStates\\Levels\\Level_104",
+        "GUID": "{D0413FAB-5E97-43C5-B3C8-8DD2A16A9CC7}"
+       },
+       {
+        "Id": "3281625917",
+        "Name": "Level_Menu",
+        "ObjectPath": "\\States\\GameStates\\Levels\\Level_Menu",
+        "GUID": "{86711869-FF67-4EEA-B753-D388DB62B931}"
+       },
+       {
+        "Id": "3444166614",
+        "Name": "Level_Death",
+        "ObjectPath": "\\States\\GameStates\\Levels\\Level_Death",
+        "GUID": "{4EE81454-0580-4C40-BCAF-80F095171312}"
+       }
+      ]
+     },
+     {
+      "Id": "3290740104",
+      "Name": "MarioRunning",
+      "ObjectPath": "\\States\\MarioMovement\\MarioRunning",
+      "GUID": "{E7852421-283C-4696-9E25-BA8BCD650651}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\MarioMovement\\MarioRunning\\None",
+        "GUID": "{F3CE8C07-25FD-43CD-89B3-6DEB17D72A27}"
+       },
+       {
+        "Id": "1281810935",
+        "Name": "Start",
+        "ObjectPath": "\\States\\MarioMovement\\MarioRunning\\Start",
+        "GUID": "{84AAC705-7E84-4E59-9D01-82CB67915BE2}"
+       },
+       {
+        "Id": "3863236874",
+        "Name": "Running",
+        "ObjectPath": "\\States\\MarioMovement\\MarioRunning\\Running",
+        "GUID": "{B2512CB2-2437-4A8F-B270-1C402A7E50A2}"
        }
       ]
      }
@@ -894,10 +1426,56 @@
         "GUID": "{66995346-05B9-4944-9F93-7E717E803547}"
        }
       ]
+     },
+     {
+      "Id": "2141048674",
+      "Name": "Elevation",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Elevation",
+      "GUID": "{89AF6957-69CE-46BA-AC97-6ECE018FFF40}",
+      "GameParameterRef": {
+       "Id": "3827456195"
+      },
+      "Switches": [
+       {
+        "Id": "3210465691",
+        "Name": "NotHighUp",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Elevation\\NotHighUp",
+        "GUID": "{36993E44-B110-4900-AB78-529AD88E0840}"
+       },
+       {
+        "Id": "3301294737",
+        "Name": "HighUpInAir",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Elevation\\HighUpInAir",
+        "GUID": "{FD5427E9-851A-4406-9D5E-4254B4E1017A}"
+       }
+      ]
+     },
+     {
+      "Id": "2245053687",
+      "Name": "MarioClosenessToPipe",
+      "ObjectPath": "\\Switches\\Default Work Unit\\MarioClosenessToPipe",
+      "GUID": "{552BBF1A-A8E4-4CD4-A6CF-371F3EF8B956}",
+      "GameParameterRef": {
+       "Id": "2335757700"
+      },
+      "Switches": [
+       {
+        "Id": "340271938",
+        "Name": "Walking",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MarioClosenessToPipe\\Walking",
+        "GUID": "{FB7BD98A-BE42-4E2C-B406-C59798D9BA29}"
+       },
+       {
+        "Id": "3863236874",
+        "Name": "Running",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MarioClosenessToPipe\\Running",
+        "GUID": "{A777380C-E87A-40A0-ADEE-F8FB1198FC05}"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{7F7484D2-78A9-C98E-DEDA-B4D5CBFB2239}"
+  "FileHash": "{DAB81746-AAD2-ADDC-1505-2D51E2E65263}"
  }
 }

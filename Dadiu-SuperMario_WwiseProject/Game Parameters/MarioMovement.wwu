@@ -5,9 +5,9 @@
 			<ChildrenList>
 				<GameParameter Name="Mario_Jump_Air" ID="{BA2B8EC2-B827-43A3-B1EA-C959C2612152}">
 					<PropertyList>
-						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="20"/>
+						<Property Name="Min" Type="Real64" Value="-20"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="Mario_DistanceToBush" ID="{8DF07763-A12F-4AA4-B56E-30E6E713DF9F}">

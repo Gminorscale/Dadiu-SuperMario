@@ -3,197 +3,49 @@
 	<AudioObjects>
 		<WorkUnit Name="MarioMovement" ID="{AC3C7586-1AFE-45C2-8FBD-71A2B1683C71}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="Mario_Jump_Air" ID="{4897DB64-F53F-4190-8D86-6C6A4B36A167}" ShortID="486679129">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-9</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<SourcePlugin Name="Synth One" ID="{7CE25225-D05B-404D-A946-B3452022B0F6}" ShortID="958582912" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
-							<PropertyList>
-								<Property Name="BaseFrequency" Type="Real32" Value="444"/>
-								<Property Name="Osc2Level" Type="Real32" Value="-96"/>
-							</PropertyList>
-							<ObjectLists>
-								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{EC50D34D-77BC-4886-8859-C375E25CEF4F}" ShortID="274628885">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="OutputLevel"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<Custom>
-															<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{ECA373D4-4992-4B6D-9D6E-97DF46005CB0}" ShortID="501665661">
-																<PropertyList>
-																	<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
-																</PropertyList>
-															</ModulatorEnvelope>
-														</Custom>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{0F2E4024-A5D1-47F2-B1F0-D1DE8FCC59FD}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-96</YPos>
-																		<Flags>21</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>1</XPos>
-																		<YPos>0</YPos>
-																		<Flags>53</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-							<Language>SFX</Language>
-						</SourcePlugin>
-					</ChildrenList>
-					<ObjectLists>
-						<ObjectList Name="RTPC">
-							<Reference>
-								<Local>
-									<RTPC Name="" ID="{3F77108F-C501-4426-B178-B90C601001FE}" ShortID="76295296">
-										<PropertyList>
-											<Property Name="PropertyName" Type="string" Value="Pitch"/>
-										</PropertyList>
-										<ReferenceList>
-											<Reference Name="ControlInput">
-												<ObjectRef Name="Mario_Jump_Air" ID="{BA2B8EC2-B827-43A3-B1EA-C959C2612152}" WorkUnitID="{5C4596E8-4074-4CEE-8B60-27C166CB29EE}"/>
-											</Reference>
-											<Reference Name="Curve">
-												<Custom>
-													<Curve Name="" ID="{C858B734-492D-4632-9F21-975FCDA27375}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-2000</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>1</XPos>
-																<YPos>1017</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</RTPC>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<RTPC Name="" ID="{89D1A9E7-00A4-4752-B792-55519021BF0A}" ShortID="887055870">
-										<PropertyList>
-											<Property Name="PropertyName" Type="string" Value="Highpass"/>
-										</PropertyList>
-										<ReferenceList>
-											<Reference Name="ControlInput">
-												<ObjectRef Name="Mario_Jump_Air" ID="{BA2B8EC2-B827-43A3-B1EA-C959C2612152}" WorkUnitID="{5C4596E8-4074-4CEE-8B60-27C166CB29EE}"/>
-											</Reference>
-											<Reference Name="Curve">
-												<Custom>
-													<Curve Name="" ID="{016EDAC6-4937-45D1-9353-1B25BB7A0C88}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-77</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>1</XPos>
-																<YPos>80</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</RTPC>
-								</Local>
-							</Reference>
-						</ObjectList>
-					</ObjectLists>
-					<ActiveSourceList>
-						<ActiveSource Name="Synth One" ID="{7CE25225-D05B-404D-A946-B3452022B0F6}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<RandomSequenceContainer Name="Mario_Landing" ID="{96606A77-D21C-4BEF-B56F-430C41D354CB}" ShortID="513664231">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 						</Reference>
 					</ReferenceList>
 				</RandomSequenceContainer>
 				<SwitchContainer Name="Mario_Jump" ID="{91FB8166-72F3-4DAD-BF42-C0471EB1990F}" ShortID="736536115">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 						</Reference>
 						<Reference Name="DefaultSwitchOrState">
-							<ObjectRef Name="MarioBig" ID="{6D93E023-BD7D-4F08-A94A-4F992F2C4CCC}" WorkUnitID="{8E067081-8106-4221-879A-E011B4232DB7}"/>
+							<ObjectRef Name="MarioSizeSmall" ID="{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}" WorkUnitID="{FF2098DD-199E-49F4-8D4F-A281C196DD31}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
-							<ObjectRef Name="MarioSize" ID="{B5A5E2D4-0835-4F9A-A440-8CF926487C2B}" WorkUnitID="{8E067081-8106-4221-879A-E011B4232DB7}"/>
+							<ObjectRef Name="MarioSize" ID="{BE5C764F-E55A-4451-BF46-383D03A67E2C}" WorkUnitID="{FF2098DD-199E-49F4-8D4F-A281C196DD31}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="Mario_Jump_Small" ID="{B55A9977-4705-4462-A640-43358396A890}" ShortID="749152003">
 							<ReferenceList>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Mario_Jump_001" ID="{77337226-C1E6-4B9F-A95E-9E0C69523F30}" ShortID="245218015">
 									<ReferenceList>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -212,10 +64,10 @@
 								<Sound Name="Mario_Jump_002" ID="{69B22AAA-5965-4D96-B66B-027F3867D8D4}" ShortID="156320836">
 									<ReferenceList>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -234,10 +86,10 @@
 								<Sound Name="Mario_Jump_003" ID="{D9BF3346-E62B-42A9-A003-EECA0F436C87}" ShortID="761994329">
 									<ReferenceList>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -256,10 +108,10 @@
 								<Sound Name="Mario_Jump_004" ID="{D989D5E8-EDA7-4397-B933-3D8120194483}" ShortID="1295012">
 									<ReferenceList>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -280,20 +132,20 @@
 						<RandomSequenceContainer Name="Mario_Jump_Big" ID="{1D32415D-081F-4AFD-B9F5-51B5352F3012}" ShortID="908865530">
 							<ReferenceList>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Mario_Jump_Big_001" ID="{8E848A1A-2188-4B4C-9E82-C578C423DD7E}" ShortID="288952607">
 									<ReferenceList>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -312,10 +164,10 @@
 								<Sound Name="Mario_Jump_Big_002" ID="{1D434713-AD2E-415E-BE09-0D1BA124D805}" ShortID="931922578">
 									<ReferenceList>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -334,10 +186,10 @@
 								<Sound Name="Mario_Jump_Big_003" ID="{FF5E74B8-1291-4660-B33E-0FAEC16E6AA7}" ShortID="677761306">
 									<ReferenceList>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -356,10 +208,10 @@
 								<Sound Name="Mario_Jump_Big_004" ID="{2EE87DCD-AEDD-470C-A5CB-2B4FA42CD2B3}" ShortID="717940092">
 									<ReferenceList>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -389,15 +241,15 @@
 						</GroupingBehaviorList>
 						<GroupingList>
 							<Grouping>
-								<SwitchRef Name="MarioBig" ID="{6D93E023-BD7D-4F08-A94A-4F992F2C4CCC}"/>
+								<SwitchRef Name="MarioSizeSmall" ID="{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}"/>
 								<ItemList>
-									<ItemRef Name="Mario_Jump_Big" ID="{1D32415D-081F-4AFD-B9F5-51B5352F3012}"/>
+									<ItemRef Name="Mario_Jump_Small" ID="{B55A9977-4705-4462-A640-43358396A890}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
-								<SwitchRef Name="MarioSmall" ID="{1E632B7B-66C7-4899-8F42-B619E26511D8}"/>
+								<SwitchRef Name="MarioSizeBig" ID="{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}"/>
 								<ItemList>
-									<ItemRef Name="Mario_Jump_Small" ID="{B55A9977-4705-4462-A640-43358396A890}"/>
+									<ItemRef Name="Mario_Jump_Big" ID="{1D32415D-081F-4AFD-B9F5-51B5352F3012}"/>
 								</ItemList>
 							</Grouping>
 						</GroupingList>
@@ -406,58 +258,36 @@
 				<SwitchContainer Name="Mario_Running" ID="{EFF40A94-0427-484E-983B-0DCE4B807185}" ShortID="985320352">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 						</Reference>
 						<Reference Name="DefaultSwitchOrState">
-							<ObjectRef Name="Start" ID="{84AAC705-7E84-4E59-9D01-82CB67915BE2}" WorkUnitID="{8E067081-8106-4221-879A-E011B4232DB7}"/>
+							<ObjectRef Name="NotHighUp" ID="{36993E44-B110-4900-AB78-529AD88E0840}" WorkUnitID="{33C89470-F37D-460A-A034-32E80F44DB67}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
-							<ObjectRef Name="MarioRunning" ID="{E7852421-283C-4696-9E25-BA8BCD650651}" WorkUnitID="{8E067081-8106-4221-879A-E011B4232DB7}"/>
+							<ObjectRef Name="Elevation" ID="{89AF6957-69CE-46BA-AC97-6ECE018FFF40}" WorkUnitID="{33C89470-F37D-460A-A034-32E80F44DB67}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="Mario_Run_Start" ID="{5D7051C9-9551-4832-8C45-8CEAA7616FCC}" ShortID="190605489">
 							<ReferenceList>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Mario_Run_Start_001" ID="{B66871A4-7BCA-4537-8289-D56196A71E47}" ShortID="402354887">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Mario_Run_Start_001" ID="{22554B13-01B7-405D-ACDF-E3CB61735AD6}">
-											<Language>SFX</Language>
-											<AudioFile>Mario_Run_Start_001.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="986638542"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Mario_Run_Start_001" ID="{22554B13-01B7-405D-ACDF-E3CB61735AD6}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="Mario_Run_Start_002" ID="{1186DDE7-7474-41B2-BAE1-415A5BD63DC7}" ShortID="839165848">
 									<ReferenceList>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -476,10 +306,10 @@
 								<Sound Name="Mario_Run_Start_003" ID="{10869F9D-0222-458C-A561-9920F221666A}" ShortID="849662629">
 									<ReferenceList>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -498,10 +328,10 @@
 								<Sound Name="Mario_Run_Start_004" ID="{070B1270-49F8-4CFB-8725-47E24F956B5E}" ShortID="1016995754">
 									<ReferenceList>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -522,36 +352,36 @@
 						<SwitchContainer Name="Mario_Footsteps" ID="{85495927-4D17-4765-8EC8-300583648D45}" ShortID="864362415">
 							<ReferenceList>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 								</Reference>
 								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="MarioBig" ID="{6D93E023-BD7D-4F08-A94A-4F992F2C4CCC}" WorkUnitID="{8E067081-8106-4221-879A-E011B4232DB7}"/>
+									<ObjectRef Name="MarioSizeSmall" ID="{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}" WorkUnitID="{FF2098DD-199E-49F4-8D4F-A281C196DD31}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="MarioSize" ID="{B5A5E2D4-0835-4F9A-A440-8CF926487C2B}" WorkUnitID="{8E067081-8106-4221-879A-E011B4232DB7}"/>
+									<ObjectRef Name="MarioSize" ID="{BE5C764F-E55A-4451-BF46-383D03A67E2C}" WorkUnitID="{FF2098DD-199E-49F4-8D4F-A281C196DD31}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="Mario_Footsteps_Big" ID="{36036A7C-DE17-4426-9DDC-B9D9106B5B4F}" ShortID="1057762304">
 									<ReferenceList>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="Mario_Footsteps_Big_001" ID="{E82331EF-BF89-48B5-A6FD-D28B853A500D}" ShortID="124497147">
 											<ReferenceList>
 												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -570,10 +400,10 @@
 										<Sound Name="Mario_Footsteps_Big_002" ID="{3D77E7E0-2DCA-40A0-A4D6-3C2DCE30A268}" ShortID="1066244027">
 											<ReferenceList>
 												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -592,10 +422,10 @@
 										<Sound Name="Mario_Footsteps_Big_003" ID="{2E10C338-E26A-4FC1-820E-6F6416921A22}" ShortID="353991932">
 											<ReferenceList>
 												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -614,10 +444,10 @@
 										<Sound Name="Mario_Footsteps_Big_004" ID="{54FF8E85-B51C-4944-9072-54189E074F41}" ShortID="602413546">
 											<ReferenceList>
 												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -642,20 +472,20 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="Mario_Footsteps_001" ID="{32722C88-74DF-410B-9C64-F2CB6A6B41D7}" ShortID="113738114">
 											<ReferenceList>
 												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -674,10 +504,10 @@
 										<Sound Name="Mario_Footsteps_002" ID="{D82B5970-C2DF-4201-B900-C80CA51EED59}" ShortID="936904505">
 											<ReferenceList>
 												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -696,10 +526,10 @@
 										<Sound Name="Mario_Footsteps_003" ID="{139079FF-9E5C-4C38-A322-851F6D4B00EE}" ShortID="1052736628">
 											<ReferenceList>
 												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -718,10 +548,10 @@
 										<Sound Name="Mario_Footsteps_004" ID="{A09B5C5B-ECA5-425B-8D00-72CE5DD502C9}" ShortID="311766011">
 											<ReferenceList>
 												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{85D28602-E157-40E9-9B1B-03EBEC7D65EF}"/>
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5004CB2-D8E3-4B6D-89B3-29822243CE3D}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
@@ -751,15 +581,15 @@
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
-										<SwitchRef Name="MarioBig" ID="{6D93E023-BD7D-4F08-A94A-4F992F2C4CCC}"/>
+										<SwitchRef Name="MarioSizeSmall" ID="{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}"/>
 										<ItemList>
-											<ItemRef Name="Mario_Footsteps_Big" ID="{36036A7C-DE17-4426-9DDC-B9D9106B5B4F}"/>
+											<ItemRef Name="Mario_Footsteps_Small" ID="{BB97DED9-BF92-4731-8614-EEE6775588EB}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="MarioSmall" ID="{1E632B7B-66C7-4899-8F42-B619E26511D8}"/>
+										<SwitchRef Name="MarioSizeBig" ID="{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}"/>
 										<ItemList>
-											<ItemRef Name="Mario_Footsteps_Small" ID="{BB97DED9-BF92-4731-8614-EEE6775588EB}"/>
+											<ItemRef Name="Mario_Footsteps_Big" ID="{36036A7C-DE17-4426-9DDC-B9D9106B5B4F}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>
@@ -775,11 +605,342 @@
 								<ItemRef Name="Mario_Run_Start" ID="{5D7051C9-9551-4832-8C45-8CEAA7616FCC}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<SwitchContainer Name="Mario_JumpAir_Sw" ID="{B12AC338-0A31-4639-9714-17B3DE925E3E}" ShortID="847378811">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="MarioSizeSmall" ID="{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}" WorkUnitID="{FF2098DD-199E-49F4-8D4F-A281C196DD31}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="MarioSize" ID="{BE5C764F-E55A-4451-BF46-383D03A67E2C}" WorkUnitID="{FF2098DD-199E-49F4-8D4F-A281C196DD31}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Mario_Jump_Air_Big" ID="{4897DB64-F53F-4190-8D86-6C6A4B36A167}" ShortID="486679129">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Synth One" ID="{7CE25225-D05B-404D-A946-B3452022B0F6}" ShortID="958582912" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+									<PropertyList>
+										<Property Name="BaseFrequency" Type="Real32" Value="222"/>
+										<Property Name="Osc2Level" Type="Real32" Value="-96"/>
+									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{EC50D34D-77BC-4886-8859-C375E25CEF4F}" ShortID="274628885">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="OutputLevel"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<Custom>
+																	<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{ECA373D4-4992-4B6D-9D6E-97DF46005CB0}" ShortID="501665661">
+																		<PropertyList>
+																			<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																		</PropertyList>
+																	</ModulatorEnvelope>
+																</Custom>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{0F2E4024-A5D1-47F2-B1F0-D1DE8FCC59FD}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-96</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{3F77108F-C501-4426-B178-B90C601001FE}" ShortID="76295296">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Mario_Jump_Air" ID="{BA2B8EC2-B827-43A3-B1EA-C959C2612152}" WorkUnitID="{5C4596E8-4074-4CEE-8B60-27C166CB29EE}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{C858B734-492D-4632-9F21-975FCDA27375}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-20</XPos>
+																		<YPos>-2000</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>20</XPos>
+																		<YPos>1017</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{89D1A9E7-00A4-4752-B792-55519021BF0A}" ShortID="887055870">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Highpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Mario_Jump_Air" ID="{BA2B8EC2-B827-43A3-B1EA-C959C2612152}" WorkUnitID="{5C4596E8-4074-4CEE-8B60-27C166CB29EE}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{016EDAC6-4937-45D1-9353-1B25BB7A0C88}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-20</XPos>
+																		<YPos>-77</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>20</XPos>
+																		<YPos>80</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Synth One" ID="{7CE25225-D05B-404D-A946-B3452022B0F6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Mario_Jump_Air_Small" ID="{475465CD-2662-4A54-9269-C26CEEA89FBA}" ShortID="377735527">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0D42A50-A450-4C6F-A4DF-8B68E5570593}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1EBFBC3E-C68C-44D6-80E6-21B11FC75DF9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Synth One" ID="{D96FB2BD-05D8-4107-B6B0-1DA92A03EF8B}" ShortID="109586148" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+									<PropertyList>
+										<Property Name="BaseFrequency" Type="Real32" Value="444"/>
+										<Property Name="Osc2Level" Type="Real32" Value="-96"/>
+									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{57F3A3D4-F4E9-4F83-81A1-377FCF715620}" ShortID="875782605">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="OutputLevel"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<Custom>
+																	<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{FBD466F9-38A9-4721-A284-5162C79B29D5}" ShortID="56095537">
+																		<PropertyList>
+																			<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																		</PropertyList>
+																	</ModulatorEnvelope>
+																</Custom>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{F986A1CC-3253-4FD7-9A29-07FE8A4A78F8}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-96</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{9C16A057-90A2-4677-B27E-AB3D0F1DC522}" ShortID="649997822">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Mario_Jump_Air" ID="{BA2B8EC2-B827-43A3-B1EA-C959C2612152}" WorkUnitID="{5C4596E8-4074-4CEE-8B60-27C166CB29EE}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{47F3F081-573B-4636-94C4-8CD45DE77C5C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-20</XPos>
+																		<YPos>-2000</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>20</XPos>
+																		<YPos>1017</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{2C77C541-9B37-4CAF-9A74-E514F2020E4E}" ShortID="345883454">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Highpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Mario_Jump_Air" ID="{BA2B8EC2-B827-43A3-B1EA-C959C2612152}" WorkUnitID="{5C4596E8-4074-4CEE-8B60-27C166CB29EE}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{98A3854B-BAB6-4437-88C6-34674322049B}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-20</XPos>
+																		<YPos>-77</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>20</XPos>
+																		<YPos>80</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Synth One" ID="{D96FB2BD-05D8-4107-B6B0-1DA92A03EF8B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Mario_Jump_Air_Big" ID="{4897DB64-F53F-4190-8D86-6C6A4B36A167}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Mario_Jump_Air_Small" ID="{475465CD-2662-4A54-9269-C26CEEA89FBA}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
 						<GroupingList>
 							<Grouping>
-								<SwitchRef Name="Start" ID="{84AAC705-7E84-4E59-9D01-82CB67915BE2}"/>
+								<SwitchRef Name="MarioSizeSmall" ID="{C1EBEF12-2772-40DD-95F9-6A27A31A36EE}"/>
 								<ItemList>
-									<ItemRef Name="Mario_Run_Start" ID="{5D7051C9-9551-4832-8C45-8CEAA7616FCC}"/>
+									<ItemRef Name="Mario_Jump_Air_Small" ID="{475465CD-2662-4A54-9269-C26CEEA89FBA}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="MarioSizeBig" ID="{54C7DB7F-44FE-4CDF-885A-6C1CFA11BD6B}"/>
+								<ItemList>
+									<ItemRef Name="Mario_Jump_Air_Big" ID="{4897DB64-F53F-4190-8D86-6C6A4B36A167}"/>
 								</ItemList>
 							</Grouping>
 						</GroupingList>

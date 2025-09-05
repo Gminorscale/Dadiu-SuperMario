@@ -109,8 +109,7 @@ MonoBehaviour:
   WwLevelMusic:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8312ebbcbfb6410468d9b88cd7c4d09c,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
   WwLevelMusicHurry:
     idInternal: 0
     valueGuidInternal: 
@@ -134,7 +133,8 @@ MonoBehaviour:
   WwoneUpSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 42453e52ecbfc4b4e83b9eb404c63cf8,
+      type: 2}
   WwbowserFallSound:
     idInternal: 0
     valueGuidInternal: 
@@ -173,12 +173,12 @@ MonoBehaviour:
   WwjumpSmallSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 50e4d2b3b45223442a3270b7048603c3,
+    WwiseObjectReference: {fileID: 11400000, guid: f08a22a9aa6117c4f9e5b52ad723f68e,
       type: 2}
   WwjumpSuperSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e6804f00af900f94dbccbc8cfd61c244,
+    WwiseObjectReference: {fileID: 11400000, guid: f08a22a9aa6117c4f9e5b52ad723f68e,
       type: 2}
   WwkickSound:
     idInternal: 0
@@ -191,7 +191,8 @@ MonoBehaviour:
   WwpowerupSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 42453e52ecbfc4b4e83b9eb404c63cf8,
+      type: 2}
   WwpowerupAppearSound:
     idInternal: 0
     valueGuidInternal: 
@@ -807,7 +808,17 @@ MonoBehaviour:
   InAirSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: abd22dd59c7a1f34e977b0d11bf2aa4a,
+    WwiseObjectReference: {fileID: 11400000, guid: e5a4ddd045305d647b48ce2f66a70fe7,
+      type: 2}
+  FootstepEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2f8e80e148e7e7a4a994346831975c25,
+      type: 2}
+  JumpVerticalSpeed:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8c6d332c308c5404fa25823dc1e06dd6,
       type: 2}
   LevelManager: {fileID: 1004064948157000}
   GroundLayers:

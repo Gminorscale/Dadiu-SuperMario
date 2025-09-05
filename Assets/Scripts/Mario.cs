@@ -13,6 +13,10 @@ public class Mario : MonoBehaviour {
 	//Wwise Events
 	public AK.Wwise.RTPC MarioSpeed;
 	public AK.Wwise.Event InAirSound;
+	public AK.Wwise.Event FootstepEvent;
+	public AK.Wwise.RTPC JumpVerticalSpeed;
+
+	private uint jumpLoopPlayingId;
 
 	private LevelManager t_LevelManager;
 	private Transform m_GroundCheck1, m_GroundCheck2;
@@ -128,7 +132,7 @@ public class Mario : MonoBehaviour {
 
 	void FixedUpdate () {
 		{
-			MarioSpeed.SetValue(LevelManager, currentSpeedX);
+			MarioSpeed.SetValue(gameObject, currentSpeedX);
 			//Debug.Log(currentSpeedX);
 		}
 		/******** Horizontal movement on ground */
@@ -220,12 +224,28 @@ public class Mario : MonoBehaviour {
 				} else {
 					t_LevelManager.WwjumpSmallSound.Post(t_LevelManager.gameObject);
 				}
+				// Start looping in-air synth
+				if (InAirSound != null && jumpLoopPlayingId == 0) {
+					jumpLoopPlayingId = InAirSound.Post(gameObject);
+				}
 			}
 		} else {  // lower gravity if Jump button held; increased gravity if released
 			if (m_Rigidbody2D.velocity.y > 0 && jumpButtonHeld) {
 				m_Rigidbody2D.gravityScale = normalGravity * jumpUpGravity;
 			} else {
 				m_Rigidbody2D.gravityScale = normalGravity * jumpDownGravity;
+			}
+		}
+
+		// Update jump-loop RTPC while airborne and stop on actual landing
+		if (!isGrounded) {
+			if (JumpVerticalSpeed != null) {
+				JumpVerticalSpeed.SetValue(gameObject, m_Rigidbody2D.velocity.y);
+			}
+		} else if (!isJumping) { // avoid stopping in the same frame the jump starts
+			if (jumpLoopPlayingId != 0) {
+				AkSoundEngine.StopPlayingID(jumpLoopPlayingId);
+				jumpLoopPlayingId = 0;
 			}
 		}
 
@@ -281,6 +301,14 @@ public class Mario : MonoBehaviour {
 			moveDirectionX = faceDirectionX;
 		}
 			
+	}
+
+
+	// Called by Animation Event keyframes named "OnFootstep"
+	private void OnFootstep() {
+		if (FootstepEvent != null && isGrounded) {
+			FootstepEvent.Post(gameObject);
+		}
 	}
 
 

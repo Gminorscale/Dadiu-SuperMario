@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7403d19dc6b274298389f56fa17c4c, type: 3}
+  m_Name: BA2B8EC2-B827-43A3-B1EA-C959C2612152
+  m_EditorClassIdentifier: 
+  objectName: Mario_Jump_Air
+  id: 710739923
+  guid: BA2B8EC2-B827-43A3-B1EA-C959C2612152

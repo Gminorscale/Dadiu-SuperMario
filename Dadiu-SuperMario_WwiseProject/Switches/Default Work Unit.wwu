@@ -48,6 +48,45 @@
 						</Curve>
 					</SwitchOnRTPC>
 				</SwitchGroup>
+				<SwitchGroup Name="Elevation" ID="{89AF6957-69CE-46BA-AC97-6ECE018FFF40}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="HighUpInAir" ID="{FD5427E9-851A-4406-9D5E-4254B4E1017A}"/>
+						<Switch Name="NotHighUp" ID="{36993E44-B110-4900-AB78-529AD88E0840}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="MarioYAxis" ID="{0F5E58B8-B8D1-4043-BCEB-85D0AA2A5B30}"/>
+						<Curve Name="" ID="{25A8F721-F597-43F0-A4B2-C1E9C41E953A}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>2</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>76.10738</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>83.48993</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>100</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

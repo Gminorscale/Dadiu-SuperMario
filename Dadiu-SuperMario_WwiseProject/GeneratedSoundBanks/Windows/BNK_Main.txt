@@ -1,7 +1,11 @@
 Event	ID	Name			Wwise Object Path	Notes
+	264438660	Play_Mario_Jump_Air			\MarioMovement\Play_Mario_Jump_Air	
 	318505690	Play_DB_Synth_200Hz_2D_Lp			\Debug\DebugEvents\Play_DB_Synth_200Hz_2D_Lp	
 	653287783	Play_Pipe_Idle			\Objects\Play_Pipe_Idle	
 	951086285	BrickBreak			\Sjúrður\BrickBreak	
+	1648573193	MarioDead			\MarioStates\MarioDead	
+	2044119629	Play_Mario_Jump			\MarioMovement\Play_Mario_Jump	
+	2083511724	Play_Mario_Upgrade_Mushroom			\MarioMovement\Play_Mario_Upgrade_Mushroom	
 	2115743526	MUS_PlayMainPlaylist			\Music\MUS_PlayMainPlaylist	
 	2517391619	Play_DB_Synth_2D_Lp			\Debug\DebugEvents\Play_DB_Synth_2D_Lp	
 	2534169461	Play_DB_Synth_2D_Os			\Debug\DebugEvents\Play_DB_Synth_2D_Os	
@@ -9,11 +13,21 @@ Event	ID	Name			Wwise Object Path	Notes
 	2723243971	MUS_Level101			\Music\MUS_Level101	
 	2752428610	CoinPickup			\Sjúrður\CoinPickup	
 	2834276857	Play_DB_Synth_2D_Os_p100			\Debug\DebugEvents\Play_DB_Synth_2D_Os_p100	
+	2903442078	Play_Mario_Running			\MarioMovement\Play_Mario_Running	
 	2935089634	Play_DB_Synth_2D_Os_p200			\Debug\DebugEvents\Play_DB_Synth_2D_Os_p200	
+	2951688446	Play_Mario_Landing			\MarioMovement\Play_Mario_Landing	
 	3011457342	Play_FlagPole			\Objects\Play_FlagPole	
 	3035902443	Play_DB_Synth_2D_Os_p300			\Debug\DebugEvents\Play_DB_Synth_2D_Os_p300	
 	3136715220	Play_DB_Synth_2D_Os_p400			\Debug\DebugEvents\Play_DB_Synth_2D_Os_p400	
 	3266186833	Play_DB_Synth_400Hz_3D_Lp			\Debug\DebugEvents\Play_DB_Synth_400Hz_3D_Lp	
+	3279359330	Play_Mario_Footsteps			\MarioMovement\Play_Mario_Footsteps	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2141048674	Elevation			\Default Work Unit\Elevation	
+
+Switch	ID	Name	Switch Group			Notes
+	3210465691	NotHighUp	Elevation			
+	3301294737	HighUpInAir	Elevation			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	866639936	MarioSize			\MarioStates\MarioSize	
@@ -25,19 +39,23 @@ State	ID	Name	State Group			Notes
 	1915863002	MarioSizeBig	MarioSize			
 	2458678061	MarioSizeSmall	MarioSize			
 	748895195	None	MarioLives			
-	826997356	ST_MarioLive_02	MarioLives			
-	826997357	ST_MarioLive_03	MarioLives			
-	826997358	ST_MarioLive_00	MarioLives			
-	826997359	ST_MarioLive_01	MarioLives			
+	3637637980	MarioLive_00	MarioLives			
+	3637637981	MarioLive_01	MarioLives			
+	3637637982	MarioLive_02	MarioLives			
+	3637637983	MarioLive_03	MarioLives			
 	748895195	None	Levels			
-	2673545491	ST_Level_104	Levels			
-	2673545492	ST_Level_103	Levels			
-	2673545493	ST_Level_102	Levels			
-	2673545494	ST_Level_101	Levels			
+	1370465240	Level_101	Levels			
+	1370465242	Level_103	Levels			
+	1370465243	Level_102	Levels			
+	1370465245	Level_104	Levels			
+	3281625917	Level_Menu	Levels			
+	3444166614	Level_Death	Levels			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	710739923	Mario_Jump_Air			\MarioMovement\Mario_Jump_Air	
 	2335757700	MarioSpeed			\Mario\MarioSpeed	
 	2489148713	MarioDistanceToFlagPole			\Mario\MarioDistanceToFlagPole	
+	3827456195	MarioYAxis			\Mario\MarioYAxis	
 
 Modulator LFO	ID	Name			Wwise Object Path	Notes
 	38530114	Modulator LFO (Custom)				
@@ -45,6 +63,8 @@ Modulator LFO	ID	Name			Wwise Object Path	Notes
 	788092142	Modulator LFO (Custom)				
 
 Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	56095537	Modulator Envelope (Custom)				
+	501665661	Modulator Envelope (Custom)				
 	598765381	Modulator Envelope (Custom)				
 	742622085	Modulator Envelope (Custom)				
 	826413675	Modulator Envelope (Custom)				
@@ -55,19 +75,40 @@ Effect plug-ins	ID	Name	Type				Notes
 	1735130781	Aliasing	Wwise Tremolo			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	109586148	Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\MarioMovement\Mario_JumpAir_Sw\Mario_Jump_Air_Small\Synth One	
 	337734695	Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Debug\MX_Debug\DB_Synth_400Hz_3D_Lp\Synth One	
 	482002093	Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Debug\MX_Debug\DB_Synth_400Hz_2D_Lp\Synth One	
 	509538054	Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Debug\MX_Debug\DB_Synth_2D_Os\Synth One	
 	560563047	Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Debug\MX_Debug\DB_Synth_200Hz_2D_Lp\Synth One	
+	958582912	Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\MarioMovement\Mario_JumpAir_Sw\Mario_Jump_Air_Big\Synth One	
 	961520280	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Objects\FlagPole_Idle\FlagPole_Idle_Silence_Lp\Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	42424667	env_coin_pickup_01	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\BD\{BD8EA833-E513-C3C6-3744-A166CC2D2CBE}.wem		\Actor-Mixer Hierarchy\Environment_Sjurdur\env_coin_pickup_01		10957
 	69380797	env_brick_break_04	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\F0\{F004C2CA-F679-CCA8-2ABB-B5ACF406DCB1}.wem		\Actor-Mixer Hierarchy\Environment_Sjurdur\Brick_Break\env_brick_break_04		16090
+	117560621	Mario_Jump_002	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\12\{126C784C-7C2F-0151-977F-6E3946FA1A17}.wem		\Actor-Mixer Hierarchy\MarioMovement\Mario_Jump\Mario_Jump_Small\Mario_Jump_002		7414
+	146845531	Mario_Powerup_Mushroom_001	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\84\{84394177-61BD-E361-5825-1237CD56AEC8}.wem		\Actor-Mixer Hierarchy\MarioUpgrades\Mario_Upgrade_Mushroom\Mario_Powerup_Mushroom_001		34978
 	149108280	Track	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\09\{094F2D99-87DE-CF28-EDFB-4CAF0FA9181F}.wem		\Interactive Music Hierarchy\Music\MUS_MainSwitch\MUS_Levels_Sw\MUS_Level101_Sw\MUS_Level01_Playlist\MUS_101_B2\Track		5182013
+	326319013	Mario_Footsteps_Big_001	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\24\{24B9B9DE-6AA4-562C-F3CA-483D6F3C3EA3}.wem		\Actor-Mixer Hierarchy\MarioMovement\Mario_Running\Mario_Footsteps\Mario_Footsteps_Big\Mario_Footsteps_Big_001		6089
+	345548771	Mario_Footsteps_004	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\35\{358E7A74-7C36-7D69-429A-5E6BDB1155FC}.wem		\Actor-Mixer Hierarchy\MarioMovement\Mario_Running\Mario_Footsteps\Mario_Footsteps_Small\Mario_Footsteps_004		7563
 	370438222	env_brick_break_02	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\7C\{7C7057FA-7867-8C3B-BF95-C13F62E5A344}.wem		\Actor-Mixer Hierarchy\Environment_Sjurdur\Brick_Break\env_brick_break_02		16983
+	416383437	Mario_Jump_Big_004	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\97\{97435CEE-79B6-CCC2-5D47-DC68992293BB}.wem		\Actor-Mixer Hierarchy\MarioMovement\Mario_Jump\Mario_Jump_Big\Mario_Jump_Big_004		13367
+	419550585	Mario_Footsteps_002	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\7C\{7C9AFFED-75B1-0C33-138D-C165825EC2C7}.wem		\Actor-Mixer Hierarchy\MarioMovement\Mario_Running\Mario_Footsteps\Mario_Footsteps_Small\Mario_Footsteps_002		7512
+	488960707	Mario_Footsteps_003	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\8A\{8A720E29-15EC-B95E-556B-84F81D41D611}.wem		\Actor-Mixer Hierarchy\MarioMovement\Mario_Running\Mario_Footsteps\Mario_Footsteps_Small\Mario_Footsteps_003		7560
+	509248287	Mario_Jump_Big_002	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\CF\{CF1BCE2D-461E-5917-4495-176E319E4764}.wem		\Actor-Mixer Hierarchy\MarioMovement\Mario_Jump\Mario_Jump_Big\Mario_Jump_Big_002		13390
+	614005515	Mario_Jump_Big_001	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\DF\{DF5DA411-3AFB-C747-323D-30C6D60FF328}.wem		\Actor-Mixer Hierarchy\MarioMovement\Mario_Jump\Mario_Jump_Big\Mario_Jump_Big_001		13467
+	691261365	Mario_Jump_Big_003	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\FD\{FDE74CCD-8539-A051-4A00-603D9C94A68C}.wem		\Actor-Mixer Hierarchy\MarioMovement\Mario_Jump\Mario_Jump_Big\Mario_Jump_Big_003		13573
+	691798780	Mario_Powerup_Mushroom_002	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\DD\{DD148CD8-A766-B55C-EF69-A6FC9D2751AB}.wem		\Actor-Mixer Hierarchy\MarioUpgrades\Mario_Upgrade_Mushroom\Mario_Powerup_Mushroom_002		32696
+	715130117	Mario_Jump_004	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\CF\{CF0EE2DD-1CD6-8AC6-0C67-E8AAA5A84C75}.wem		\Actor-Mixer Hierarchy\MarioMovement\Mario_Jump\Mario_Jump_Small\Mario_Jump_004		7498
+	723967829	Mario_Footsteps_Big_003	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\AD\{AD411F28-908B-4B3E-2B35-7FCC4D6B3511}.wem		\Actor-Mixer Hierarchy\MarioMovement\Mario_Running\Mario_Footsteps\Mario_Footsteps_Big\Mario_Footsteps_Big_003		6109
+	736456924	Mario_Powerup_Mushroom_003	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\AA\{AAC09615-C15B-7955-0ED2-3AEC2175DA45}.wem		\Actor-Mixer Hierarchy\MarioUpgrades\Mario_Upgrade_Mushroom\Mario_Powerup_Mushroom_003		34584
 	746759707	env_brick_break_05	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\A7\{A7C7392E-0AEB-BE2E-1289-49247A7B603A}.wem		\Actor-Mixer Hierarchy\Environment_Sjurdur\Brick_Break\env_brick_break_05		16976
+	764123817	Mario_Jump_001	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\3B\{3B8E2DCA-B11E-9A74-C7D0-49FE20086977}.wem		\Actor-Mixer Hierarchy\MarioMovement\Mario_Jump\Mario_Jump_Small\Mario_Jump_001		7432
+	801013165	Mario_Footsteps_001	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\F6\{F6AAEEE6-7B7F-0B64-739C-A8360187BB8D}.wem		\Actor-Mixer Hierarchy\MarioMovement\Mario_Running\Mario_Footsteps\Mario_Footsteps_Small\Mario_Footsteps_001		7575
 	892213981	Track	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\0E\{0E633490-B895-99EF-C444-178856077471}.wem		\Interactive Music Hierarchy\Music\MUS_MainSwitch\MUS_Levels_Sw\MUS_Level102_Sw_01\MUS_Mario_Alive\Track		7616106
 	907230537	env_brick_break_01	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\A8\{A8ACA537-5D8C-D113-8A76-2819E0EDF5F1}.wem		\Actor-Mixer Hierarchy\Environment_Sjurdur\Brick_Break\env_brick_break_01		14115
+	924976288	Mario_Jump_003	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\23\{23F0F5DB-1A8D-A854-3E01-2216146E8E6A}.wem		\Actor-Mixer Hierarchy\MarioMovement\Mario_Jump\Mario_Jump_Small\Mario_Jump_003		7469
+	967837257	Mario_Footsteps_Big_004	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\DC\{DCFBE218-8481-C9AB-3B7D-E50715A53AEA}.wem		\Actor-Mixer Hierarchy\MarioMovement\Mario_Running\Mario_Footsteps\Mario_Footsteps_Big\Mario_Footsteps_Big_004		6124
+	1018892816	Mario_Footsteps_Big_002	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\4E\{4E0BDD7D-2A4C-A4B8-18C0-7DF4CA5820CC}.wem		\Actor-Mixer Hierarchy\MarioMovement\Mario_Running\Mario_Footsteps\Mario_Footsteps_Big\Mario_Footsteps_Big_002		6103
 	1048884391	env_brick_break_03	C:\Users\danne\Documents\GitHub\Dadiu-SuperMario\Dadiu-SuperMario_WwiseProject\.cache\11\{11530204-BEDB-4B2E-F328-AA34ABA3EF51}.wem		\Actor-Mixer Hierarchy\Environment_Sjurdur\Brick_Break\env_brick_break_03		13582
 

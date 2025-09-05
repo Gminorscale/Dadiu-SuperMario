@@ -1,28 +1,50 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2141048674	Elevation			\Default Work Unit\Elevation	
+	2245053687	MarioClosenessToPipe			\Default Work Unit\MarioClosenessToPipe	
+
+Switch	ID	Name	Switch Group			Notes
+	3210465691	NotHighUp	Elevation			
+	3301294737	HighUpInAir	Elevation			
+	340271938	Walking	MarioClosenessToPipe			
+	3863236874	Running	MarioClosenessToPipe			
+
 State Group	ID	Name			Wwise Object Path	Notes
 	866639936	MarioSize			\MarioStates\MarioSize	
 	2055629040	MarioLives			\MarioStates\MarioLives	
 	2678230316	Levels			\GameStates\Levels	
+	3290740104	MarioRunning			\MarioMovement\MarioRunning	
 
 State	ID	Name	State Group			Notes
 	748895195	None	MarioSize			
 	1915863002	MarioSizeBig	MarioSize			
 	2458678061	MarioSizeSmall	MarioSize			
 	748895195	None	MarioLives			
-	826997356	ST_MarioLive_02	MarioLives			
-	826997357	ST_MarioLive_03	MarioLives			
-	826997358	ST_MarioLive_00	MarioLives			
-	826997359	ST_MarioLive_01	MarioLives			
+	3637637980	MarioLive_00	MarioLives			
+	3637637981	MarioLive_01	MarioLives			
+	3637637982	MarioLive_02	MarioLives			
+	3637637983	MarioLive_03	MarioLives			
 	748895195	None	Levels			
-	2673545491	ST_Level_104	Levels			
-	2673545492	ST_Level_103	Levels			
-	2673545493	ST_Level_102	Levels			
-	2673545494	ST_Level_101	Levels			
+	1370465240	Level_101	Levels			
+	1370465242	Level_103	Levels			
+	1370465243	Level_102	Levels			
+	1370465245	Level_104	Levels			
+	3281625917	Level_Menu	Levels			
+	3444166614	Level_Death	Levels			
+	748895195	None	MarioRunning			
+	1281810935	Start	MarioRunning			
+	3863236874	Running	MarioRunning			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	806331687	Koopa			\Enemies2\Koopa	
 	2680856269	Music_Bus			\Mix\Music_Bus	
 	3193046343	New Master Bus			\Default Work Unit\New Master Bus	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+	4267419003	Master Audio Bus_01			\Enemies2\Master Audio Bus_01	
+	4285895376	Goomba			\Enemies2\Goomba	
+
+Effect plug-ins	ID	Name	Type				Notes
+	184307187	Compressor (Custom)	Wwise Compressor			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
