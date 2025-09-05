@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BF4DB1AB-0122-4DF9-9C0B-A6BA6DFDF93B}" SchemaVersion="123">
+	<GameParameters>
+		<WorkUnit Name="Mario" ID="{BF4DB1AB-0122-4DF9-9C0B-A6BA6DFDF93B}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="MarioToPipe" ID="{597A1157-BF49-49ED-B476-FCA4B3C18646}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="MarioAir" ID="{06FAB274-030F-4E43-9E66-3AB06E0880A4}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
